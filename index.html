@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open mo para malaman mo</title>
+        <style>
+      * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20%;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-content: center;
+}
+input {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+button {
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class = "container">
+        <input type = "text" id = "name" placeholder = "Enter your name">
+        <button type = "button" id = "button">Submit</button>
+        </div>
+    
+    
+    
+    <script>
+        document.getElementById("button").onclick = function () {
+            var name = document.getElementById("name").value;
+            alert(`hi ${name} gusto kita \n\nipasa sa lima na tao kung ayaw mo mabagsak next school year`);
+        }
+    </script>
+</body>
+</html>

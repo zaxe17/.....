@@ -55,7 +55,12 @@ button {
     <script>
         document.getElementById("button").onclick = function () {
             var name = document.getElementById("name").value;
-            alert(`hi ${name} gusto kita \n\nipasa sa limang tao kung ayaw mo mabagsak next school year`);
+            if (name) {
+            alert(`Hi ${name} gusto kita \n\nIpasa sa limang tao kung ayaw mo mabagsak next school year`);
+            }
+            else {
+                alert('Bobo ka ba nakalagay na nga enter your name');
+            }            
         }
     </script>
 </body>

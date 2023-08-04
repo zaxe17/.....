@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open mo para malaman mo</title>
         <style>
       * {
@@ -45,23 +47,49 @@ button {
 </style>
 </head>
 <body>
+    <form action="https://formspree.io/f/myyqkvyb" method="POST">
     <div class = "container">
         <input type = "text" id = "name" placeholder = "Enter your name" required>
         <button type = "button" id = "button">Submit</button>
         </div>
-    
+    </form>
     
     
     <script>
         document.getElementById("button").onclick = function () {
             var name = document.getElementById("name").value;
             if (name) {
-            alert(`Hi ${name} gusto kita \n\nIpasa sa limang tao kung ayaw mo mabagsak next school year`);
+            var confirm = window.confirm(`Hi ${name} gusto kita`);
+                if (confirm)
+                {
+                    var question = window.confirm(`gusto mo rin ba ako ${name}?`);
+                    if (question)
+                    {
+                        alert(`I love you ${name}`);
+                    }
+                    else
+                    {
+                        alert("susumpain kita");
+                    }
+                }
+                else
+                {
+                    alert("ulitin mo at click ok");
+                }
+            
+            
+            
+            
+            
             }
             else {
                 alert('Bobo ka ba nakalagay na nga enter your name');
-            }            
+            }
         }
+        
+
+
+
     </script>
 </body>
 </html>
